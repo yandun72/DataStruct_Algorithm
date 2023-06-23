@@ -24,8 +24,6 @@ class Trie:
         cur.isEnd = True
         cur.string = word
         
-
-
     def search(self, word: str) -> bool:
         cur = self.root
         for ch in word:
@@ -52,7 +50,6 @@ class Trie:
             
         for key in root.child.keys():
             self.backTrack(root.child[key],res)
-
 
     def getStartWith(self,prefix:str) -> List:
         cur = self.root
